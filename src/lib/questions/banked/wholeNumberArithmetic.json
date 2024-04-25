@@ -1,0 +1,22 @@
+{
+  "questions": [
+    {
+      "question": "What is the place value for 1 in 472,913?",
+      "type": "Multiple Choice",
+      "responses": [
+        {
+          "response": "Ones"
+        },
+        {
+          "correctResponse": "Tens"
+        },
+        {
+          "response": "Hundreds"
+        },
+        {
+          "response": "Thousands"
+        }
+      ]
+    }
+  ]
+}
