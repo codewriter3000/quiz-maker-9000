@@ -34,7 +34,13 @@
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   padding: 2em;
+}
+
+.card button {
+  margin-top: 1em;
 }
 
 .read-the-docs {
