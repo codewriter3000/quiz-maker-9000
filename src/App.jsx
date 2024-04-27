@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import { Question } from "./components/Question.jsx";
-import { generatePlaceValueQuestion } from "./lib/questions/generated/index.js";
+import { Question } from './components/Question.jsx'
+import { generatePlaceValueQuestion, generateReversePlaceValueQuestion } from './lib/questions/generated/index.js'
 
 function App() {
   const [score, setScore] = useState(0)
   const [questionCount, setQuestionCount] = useState(1)
 
-  const question = generatePlaceValueQuestion()
+  const question = questionCount % 2 === 0 ? generatePlaceValueQuestion() : generateReversePlaceValueQuestion()
 
   return (
     <>

@@ -27,6 +27,20 @@ const randomDiverseInt = (max) => {
     return tmpNum
 }
 
+const randomIntWithUniqueDigits = (numOfDigits) => {
+    if (numOfDigits > 10) {
+        throw Error('Cannot have more than 10 unique digits to a number')
+    }
+
+    let digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].sort(() => Math.random() - 0.5)
+
+    for (let i = 9 - numOfDigits; i >= 0; i--) {
+        digits.pop()
+    }
+
+    return Number(digits.join(''))
+}
+
 const QuestionType = Object.freeze({
     FIXED_BLANK: 0,
     MULTIPLE_CHOICE: 1,
@@ -38,5 +52,5 @@ const QuestionType = Object.freeze({
     APPROXIMATION: 7
 })
 
-import { generatePlaceValueQuestion } from './placeValue.js';
-export { generatePlaceValueQuestion, randomInt, randomDiverseInt, QuestionType }
+import { generatePlaceValueQuestion, generateReversePlaceValueQuestion } from './placeValue.js'
+export { generatePlaceValueQuestion, generateReversePlaceValueQuestion, randomInt, randomDiverseInt, randomIntWithUniqueDigits, QuestionType }
