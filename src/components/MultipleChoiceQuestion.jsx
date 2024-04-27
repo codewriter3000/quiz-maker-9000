@@ -1,6 +1,6 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from 'react'
 
-export const Question = ({ question, setScoreHandler, questionCount, setQuestionCountHandler }) => {
+export const MultipleChoiceQuestion = ({ question, setScoreHandler, questionCount, setQuestionCountHandler }) => {
 
   const correctChoice = question.correct_choice
   const [shuffledChoices, setShuffledChoices] = useState([])

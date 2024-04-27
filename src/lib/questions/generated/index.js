@@ -2,6 +2,10 @@ const randomInt = (max) => {
     return Math.ceil(Math.random() * max)
 }
 
+const randomIntWithMin = (min, max) => {
+    return Math.ceil(Math.random() * (max - min)) + min
+}
+
 const randomDiverseInt = (max) => {
     if (max < 9) {
         throw Error('In randomDiverseInt(max), max must be at least 9.')
@@ -53,4 +57,6 @@ const QuestionType = Object.freeze({
 })
 
 import { generatePlaceValueQuestion, generateReversePlaceValueQuestion } from './placeValue.js'
-export { generatePlaceValueQuestion, generateReversePlaceValueQuestion, randomInt, randomDiverseInt, randomIntWithUniqueDigits, QuestionType }
+import { generateMultipleChoiceRoundingQuestion, generateFixedBlankRoundingQuestion } from './rounding.js'
+
+export { generatePlaceValueQuestion, generateReversePlaceValueQuestion, generateMultipleChoiceRoundingQuestion, generateFixedBlankRoundingQuestion, randomInt, randomIntWithMin, randomDiverseInt, randomIntWithUniqueDigits, QuestionType }
