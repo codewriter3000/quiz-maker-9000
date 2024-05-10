@@ -1,4 +1,4 @@
-import {QuestionType, randomDiverseInt, randomInt, randomIntWithUniqueDigits} from './index.js';
+import {QuestionType, randomDiverseInt, randomInt, randomIntWithUniqueDigits} from '../index.js';
 
 const PlaceValues = Object.freeze({
     ONES: 'Ones',

@@ -1,4 +1,5 @@
 import { useRef } from 'react'
+import { MathJax, MathJaxContext } from 'better-react-mathjax'
 
 export const FixedBlankQuestion = ({ question, setScoreHandler, questionCount, setQuestionCountHandler }) => {
 
@@ -22,8 +23,14 @@ export const FixedBlankQuestion = ({ question, setScoreHandler, questionCount, s
   return (
     <>
       <h1>{questionCount}) {question.prompt}</h1>
+        {question.math &&
+            <h2>
+                <MathJaxContext>
+                    <MathJax>{question.math}</MathJax>
+                </MathJaxContext>
+            </h2>}
         <div className="card">
-            <input type='text' ref={answer} />
+            <input type='text' ref={answer}/>
             <button onClick={validateAnswer}>Submit</button>
         </div>
         <p className="read-the-docs">

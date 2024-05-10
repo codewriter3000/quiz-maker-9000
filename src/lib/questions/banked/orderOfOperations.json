@@ -1,0 +1,52 @@
+{
+  "questions": [
+    {
+      "prompt": "Solve the following: ",
+      "math": "(4 \\times 15) - 3",
+      "type": 0,
+      "correct_answer": "57"
+    },
+    {
+      "prompt": "Solve the following: ",
+      "math": "\\(11 \\times 8 - 6 \\div 2\\)",
+      "type": 0,
+      "correct_answer": "85"
+    },
+    {
+      "prompt": "Solve the following: ",
+      "math": "\\(5 + 2^3 \\div 4 - 2\\)",
+      "type": 0,
+      "correct_answer": "5"
+    },
+    {
+      "prompt": "Solve the following: ",
+      "math": "\\(6 \\div 4(11 - 2) \\div 3^2\\)",
+      "type": 0,
+      "correct_answer": "10"
+    },
+    {
+      "prompt": "Solve the following: ",
+      "math": "\\(6 + 21 \\div 7\\)",
+      "type": 0,
+      "correct_answer": "9"
+    },
+    {
+      "prompt": "Solve the following: ",
+      "math": "\\(\\frac{4(12 - 3)}{12}\\)",
+      "type": 0,
+      "correct_answer": "3"
+    },
+    {
+      "prompt": "Solve the following: ",
+      "math": "\\(16 \\div 2^3 + 6 - 2\\)",
+      "type": 0,
+      "correct_answer": "6"
+    },
+    {
+      "prompt": "Solve the following: ",
+      "math": "\\(2 \\times 14 \\div (3^2 - 2)\\)",
+      "type": 0,
+      "correct_answer": "4"
+    }
+  ]
+}

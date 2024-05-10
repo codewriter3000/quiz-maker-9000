@@ -45,6 +45,11 @@ const randomIntWithUniqueDigits = (numOfDigits) => {
     return Number(digits.join(''))
 }
 
+const randomCompositeFactorPair = (max, isNegative = false) => {
+    const factor = isNegative ? randomInt(-1 * max, max) : randomInt(2, max)
+    return isNegative ? [factor, factor * randomInt(-1 * max, max)] : [factor, factor * randomInt(2, max)]
+}
+
 const QuestionType = Object.freeze({
     FIXED_BLANK: 0,
     MULTIPLE_CHOICE: 1,
@@ -56,7 +61,39 @@ const QuestionType = Object.freeze({
     APPROXIMATION: 7
 })
 
-import { generatePlaceValueQuestion, generateReversePlaceValueQuestion } from './placeValue.js'
-import { generateMultipleChoiceRoundingQuestion, generateFixedBlankRoundingQuestion } from './rounding.js'
+import { generatePlaceValueQuestion, generateReversePlaceValueQuestion } from './whole-numbers-and-integers/placeValue.js'
+import { generateMultipleChoiceRoundingQuestion, generateFixedBlankRoundingQuestion } from './whole-numbers-and-integers/rounding.js'
+import { generateAdditionQuestion, generateTripleAdditionQuestion } from './whole-numbers-and-integers/addition.js'
+import { generateSubtractionQuestion } from './whole-numbers-and-integers/subtraction.js'
+import { generateMultiplicationQuestion } from './whole-numbers-and-integers/multiplication.js'
+import { generateDivisionQuestion } from './whole-numbers-and-integers/division.js'
+import { generateDivisibilityQuestion } from './divisibility.js'
+import { generateIntegerComparisonQuestion } from './whole-numbers-and-integers/modelingIntegers.js'
+import { generateOrderOfOperationsQuestion } from './whole-numbers-and-integers/orderOfOperations.js'
 
-export { generatePlaceValueQuestion, generateReversePlaceValueQuestion, generateMultipleChoiceRoundingQuestion, generateFixedBlankRoundingQuestion, randomInt, randomIntWithMin, randomDiverseInt, randomIntWithUniqueDigits, QuestionType }
+export {
+    randomInt,
+    randomIntWithMin,
+    randomDiverseInt,
+    randomIntWithUniqueDigits,
+    randomCompositeFactorPair,
+    QuestionType,
+    // 1.1
+    generatePlaceValueQuestion,
+    generateReversePlaceValueQuestion,
+    generateMultipleChoiceRoundingQuestion,
+    generateFixedBlankRoundingQuestion,
+    // 1.2
+    generateAdditionQuestion,
+    generateTripleAdditionQuestion,
+    // 1.3
+    generateSubtractionQuestion,
+    // 1.4
+    generateMultiplicationQuestion,
+    // 1.5
+    generateDivisionQuestion,
+    // 1.6
+    generateIntegerComparisonQuestion,
+    // 1.7
+    generateOrderOfOperationsQuestion,
+}

@@ -16,7 +16,11 @@ export const MultipleChoiceQuestion = ({ question, setScoreHandler, questionCoun
 
   const validateAnswer = (answer) => {
     if (answer === correctChoice) {
+        console.log('CORRECT')
         setScoreHandler(score => score + 1)
+    } else {
+        console.log('WRONG')
+        console.log(`Correct answer: ${correctChoice}`)
     }
 
     setQuestionCountHandler(questionCount => questionCount + 1)

@@ -1,0 +1,165 @@
+{
+  "questions": [
+    {
+      "prompt": "Which of the following prime numbers are part of the prime factorization of 60?",
+      "type": 2,
+      "correct_answers": [
+        {
+          "choice": "2"
+        },
+        {
+          "choice": "3"
+        },
+        {
+          "choice": "5"
+        }
+      ],
+      "wrong_answers": [
+        {
+          "choice": "7"
+        },
+        {
+          "choice": "11"
+        }
+      ]
+    },
+    {
+      "prompt": "Which of the following prime numbers are part of the prime factorization of 56?",
+      "type": 2,
+      "correct_answers": [
+        {
+          "choice": "2"
+        },
+        {
+          "choice": "7"
+        }
+      ],
+      "wrong_answers": [
+        {
+          "choice": "3"
+        },
+        {
+          "choice": "5"
+        },
+        {
+          "choice": "11"
+        }
+      ]
+    },
+    {
+      "prompt": "Which of the following prime numbers are part of the prime factorization of 30?",
+      "type": 2,
+      "correct_answers": [
+        {
+          "choice": "2"
+        },
+        {
+          "choice": "3"
+        },
+        {
+          "choice": "5"
+        }
+      ],
+      "wrong_answers": [
+        {
+          "choice": "7"
+        },
+        {
+          "choice": "11"
+        }
+      ]
+    },
+    {
+      "prompt": "Which of the following prime numbers are part of the prime factorization of 44?",
+      "type": 2,
+      "correct_answers": [
+        {
+          "choice": "2"
+        },
+        {
+          "choice": "11"
+        }
+      ],
+      "wrong_answers": [
+        {
+          "choice": "7"
+        },
+        {
+          "choice": "3"
+        },
+        {
+          "choice": "5"
+        }
+      ]
+    },
+    {
+      "prompt": "Which of the following prime numbers are part of the prime factorization of 88?",
+      "type": 2,
+      "correct_answers": [
+        {
+          "choice": "2"
+        },
+        {
+          "choice": "11"
+        }
+      ],
+      "wrong_answers": [
+        {
+          "choice": "7"
+        },
+        {
+          "choice": "3"
+        },
+        {
+          "choice": "5"
+        }
+      ]
+    },
+    {
+      "prompt": "Which of the following prime numbers are part of the prime factorization of 98?",
+      "type": 2,
+      "correct_answers": [
+        {
+          "choice": "2"
+        },
+        {
+          "choice": "7"
+        }
+      ],
+      "wrong_answers": [
+        {
+          "choice": "11"
+        },
+        {
+          "choice": "3"
+        },
+        {
+          "choice": "5"
+        }
+      ]
+    },
+    {
+      "prompt": "Which of the following prime numbers are part of the prime factorization of 84?",
+      "type": 2,
+      "correct_answers": [
+        {
+          "choice": "2"
+        },
+        {
+          "choice": "3"
+        },
+        {
+          "choice": "7"
+        }
+      ],
+      "wrong_answers": [
+        {
+          "choice": "5"
+        },
+        {
+          "choice": "11"
+        }
+      ]
+    }
+  ]
+}

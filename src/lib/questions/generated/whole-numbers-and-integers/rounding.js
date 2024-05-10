@@ -1,4 +1,4 @@
-import { QuestionType, randomInt, randomIntWithMin } from './index.js'
+import { QuestionType, randomInt, randomIntWithMin } from '../index.js'
 
 const RoundType = Object.freeze({
     TEN: 'ten',
